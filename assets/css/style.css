@@ -1,0 +1,18 @@
+:root {
+  /*primary colors*/
+  --clr-marine-blue: hsl(213, 96%, 18%);
+  --clr-purplish-blue: hsl(243, 100%, 62%);
+  --clr-pastel-blue: hsl(228, 100%, 84%);
+  --clr-light-blue: hsl(206, 94%, 87%);
+  --clr-strawberry-red: hsl(354, 84%, 57%);
+
+  /*neutral colors*/
+  --clr-cool-gray: hsl(231, 11%, 63%);
+  --clr-light-gray: hsl(229, 24%, 87%);
+  --clr-magnolia: hsl(217, 100%, 97%);
+  --clr-alabaster: hsl(0, 0%, 100%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  /*fonts*/
+  --ff-ubuntu: "Ubuntu", sans-serif; /*16pc 400 500 700*/
+}
