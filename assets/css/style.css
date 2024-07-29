@@ -16,3 +16,124 @@
   /*fonts*/
   --ff-ubuntu: "Ubuntu", sans-serif; /*16pc 400 500 700*/
 }
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+  background-color: var(--clr-magnolia);
+  font-family: var(--ff-ubuntu);
+  font-size: 1.6rem;
+  font-weight: 400;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+.container {
+  width: 100%;
+  max-width: 100rem;
+  height:60rem;
+  margin: 0 auto;
+  padding:15px;
+  display: grid;
+  grid-template-columns: 30fr 70fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  background-color: var(--clr-alabaster);
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+
+}
+
+.sidebar {
+  background-image: url(../images/bg-sidebar-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem ;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: var(--clr-white);
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.number {
+    width: 4rem;
+    height: 4rem;
+    grid-column: 1 / 2;
+    grid-row: 1 /-1;
+    padding: 1rem;
+    border-radius: 50%;
+    border: 1px solid var(--clr-white);
+    color: var(--clr-white);
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+
+    
+}
+
+.n-active{
+    background-color: var(--clr-light-blue);
+    color: var(--clr-marine-blue);
+}
+
+.step-number {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    color: var(--clr-cool-gray);
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.step-title {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    
+}
+
+
+
+/*attribution*/
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--clr-cool-gray);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
