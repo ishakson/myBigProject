@@ -51,7 +51,7 @@ body{
   display: grid;
   grid-template-columns: 30fr 70fr;
   grid-template-rows: 1fr;
-  gap: 20px;
+ 
   background-color: var(--clr-alabaster);
   border-radius: 1rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -63,7 +63,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1rem ;
-  padding: 2.5rem;
+  padding: 4.8rem 3.4rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -75,7 +75,7 @@ body{
   display: grid;
   grid-template-columns: 1fr ;
   grid-template-rows: 1fr 1fr;
-  gap: 1rem;
+  
   margin-bottom: 3rem;
 }
 
@@ -93,7 +93,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1rem;
+    margin-right: 1.6rem;
 
     
 }
@@ -114,9 +114,90 @@ body{
 .step-title {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
     
 }
 
+/*main*/
+
+.main {
+  padding: 4.6rem 9.6rem 2.4rem 9.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+
+}
+
+.title {
+  font-size: 3.8rem;
+  font-weight: 900 ;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+.description {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--clr-cool-gray);
+  margin-bottom: 3.2rem;
+}
+
+/*form*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+input {
+  width: 100%;
+  height: 4.6rem;
+  padding: 1.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--clr-cool-gray);
+  margin-bottom: 2.4rem;
+  font-size: 1.6rem;
+  font-family: var(--ff-ubuntu);
+}
+
+input:focus {
+  outline: 1px solid var(--clr-light-blue);
+}
+
+input::placeholder {
+  color: var(--clr-cool-gray);
+  font-size: 1.6rem;
+  font-family: var(--ff-ubuntu);
+}
+
+/*buttons*/
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+}
 
 
 /*attribution*/
